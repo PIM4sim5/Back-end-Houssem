@@ -72,21 +72,21 @@ async function sendMail(name, email, activationCode, password) {
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>Activation du compte</h1>
-    <h2>Bonjour ${name}</h2>
-    <p>Veuillez confirmer votre email en cliquant sur le lien suivant :</p>
-    <a href="http://localhost:58016/">Cliquez ici</a>
+    <h1>Account Activation</h1>
+    <h2>Hello ${name}</h2>
+    <p>Please confirm your email by clicking the following link:</p>
+    <a href="https://pim2024-8df70.web.app">Click here</a>
     <ul>
-      <li><strong>Votre nom d'utilisateur :</strong> ${name}</li>
-      <li><strong>Votre mot de passe :</strong> ${password}</li>
-      <li><strong>Votre Activation Code :</strong> ${activationCode}</li>
+      <li><strong>Your username:</strong> ${name}</li>
+      <li><strong>Your password:</strong> ${password}</li>
+      <li><strong>Your Activation Code:</strong> ${activationCode}</li>
     </ul>
   </div>
 </body>
 </html>
-
 
 
 `;
