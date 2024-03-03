@@ -9,11 +9,9 @@
   },
   "keywords": [],
   "author": "",
-
   "engines": {
-    "node": "v21.6.1"
+    "node": "14.x"
   },
-  
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
