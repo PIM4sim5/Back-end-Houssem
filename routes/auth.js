@@ -32,6 +32,10 @@ const storage = multer.diskStorage({
 
 
 const upload = multer({ storage: storage });
+
+
+
+
 authRouter.post("/api/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
