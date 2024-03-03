@@ -75,6 +75,12 @@ authRouter.post("/api/signup",upload.single('user_img'), async (req, res) => {
 
 
 
+// Route de test
+authRouter.get("/test", (req, res) => {
+  res.send("Hello from your backend hosted with Vercel!");
+});
+
+
 
 
 
