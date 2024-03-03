@@ -35,6 +35,7 @@ const userSchema = mongoose.Schema({
 
   user_img: {
     type: String,
+    require:false
   }
 
 

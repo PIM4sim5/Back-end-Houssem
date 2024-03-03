@@ -32,7 +32,7 @@ const storage = multer.diskStorage({
 
 
 const upload = multer({ storage: storage });
-authRouter.post("/api/signup",upload.single('user_img'), async (req, res) => {
+authRouter.post("/api/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
     const user_img = req.file.filename;
@@ -55,7 +55,7 @@ authRouter.post("/api/signup",upload.single('user_img'), async (req, res) => {
       password: hashedPassword,
       name,
       activationCode: randomCode,
-      user_img 
+      
     });
 
     user = await user.save();
