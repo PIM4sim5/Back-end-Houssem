@@ -35,7 +35,7 @@ const upload = multer({ storage: storage });
 authRouter.post("/api/signup", async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const user_img = req.file.filename;
+    
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
