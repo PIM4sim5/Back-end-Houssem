@@ -93,7 +93,7 @@ async function sendMail(name, email, activationCode, password) {
 
     const mailOptions = {
       from: 'ChatDb <zorguihoussem11@gmail.com>',
-      to: 'zorguihoussem11@gmail.com',
+      to: email,
       subject: 'Hello from ChatDb',
       text: `Hello ${name}, please confirm your email by clicking the following link: http://localhost:56736/`,
       html:mailTemplate,
