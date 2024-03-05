@@ -22,7 +22,7 @@ async function sendMail(name, email, activationCode, password) {
       service: 'gmail',
       auth: {
         type: 'OAuth2',
-        user: 'houssemzorgui10@gmail.com',
+        user: 'zorguihoussem11@gmail.com',
         clientId: CLIENT_ID,
         clientSecret: CLEINT_SECRET,
         refreshToken: REFRESH_TOKEN,
@@ -92,8 +92,8 @@ async function sendMail(name, email, activationCode, password) {
 `;
 
     const mailOptions = {
-      from: 'ChatDb <Houssemzorgui10@gmail.com>',
-      to: 'houssem.zorgui@esprit.tn',
+      from: 'ChatDb <zorguihoussem11@gmail.com>',
+      to: 'zorguihoussem11@gmail.com',
       subject: 'Hello from ChatDb',
       text: `Hello ${name}, please confirm your email by clicking the following link: http://localhost:56736/`,
       html:mailTemplate,
