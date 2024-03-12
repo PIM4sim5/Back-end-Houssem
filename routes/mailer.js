@@ -18,6 +18,8 @@ async function sendMail(name, email, activationCode, password) {
   try {
     const accessToken = await oAuth2Client.getAccessToken();
 
+
+    
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
