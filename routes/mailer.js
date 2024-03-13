@@ -5,7 +5,7 @@ const { google } = require('googleapis');
 const CLIENT_ID = '178979050607-senfpj92tdnkdlpi9lirp9ljunik82t6.apps.googleusercontent.com';
 const CLEINT_SECRET = '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';
 const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
-const REFRESH_TOKEN = '1//04w4XMBnbaxfmCgYIARAAGAQSNwF-L9IrFZ_XnKzRGtn7SzDy8gpVSu-XaoTloGEPNSNTTbQ5aYM3m1d0VzjlPLGJMfokWd10NHE';
+const REFRESH_TOKEN = '1//04SzQBSPBkXDfCgYIARAAGAQSNwF-L9IrrMR6dGUjvVU2zr76RD7RlG34OdOnV5LvT8WhyapwjS1cblLpaHSYF44sngEsaAsKKwY';
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -19,7 +19,7 @@ async function sendMail(name, email, activationCode, password) {
     const accessToken = await oAuth2Client.getAccessToken();
 
 
-    
+
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
